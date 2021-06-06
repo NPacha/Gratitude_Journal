@@ -1,13 +1,13 @@
 import React from 'react';
 import About from '../pages/About';
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
+import MyJournal from '../pages/MyJournal';
 
 const routes = [
 	{
-		Component: Contact,
-		key: 'Contact',
-		path: '/contact'
+		Component: MyJournal,
+		key: 'My Journal',
+		path: '/myjournal'
 	},
 	{
 		Component: About,
