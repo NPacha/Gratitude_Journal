@@ -21,3 +21,21 @@ itemController.post('/', async (req, res)=> {
             .json(error)
     }
 })
+
+//Read
+
+itemController.get('/', async (req, res)=> {
+    try{
+        const foundItem = await Item.find({});
+        res
+            .status(200)
+            .json(foundItem)
+    } catch(error){
+        res 
+            .status(400)
+            .json(error)
+    }
+})
+
+
+module.exports = itemController;
