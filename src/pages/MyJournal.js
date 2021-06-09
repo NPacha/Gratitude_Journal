@@ -22,6 +22,8 @@ export default function MyJournal(props) {
 						return (
 							<div className={'item'} key={item._id}>
 								<p>{item.firstItem}</p>
+								<p>{item.secondItem}</p>
+								<p>{item.thirdItem}</p>
 							</div>
 						);
 					})
